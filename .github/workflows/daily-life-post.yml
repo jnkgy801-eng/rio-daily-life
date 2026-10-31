@@ -1,0 +1,54 @@
+name: AIキャラ日常投稿（Buffer予約）
+
+# 【セットアップ（無料）】
+#  1. このリポジトリを Public にする（画像を raw.githubusercontent.com から配信するため）
+#  2. Settings > Secrets and variables > Actions に BUFFER_API_KEY / BUFFER_CHANNEL_ID を登録
+#     （新アカウントをBufferに接続し、そのチャンネルIDを使う。Buffer無料プランは3チャンネルまで）
+#  3. images/ に画像を入れてコミット（ファイル名に morning / noon / night を含めると該当枠に使われる）
+#  4. 手動実行（Run workflow）で dry_run=true にして内容を確認 → 問題なければ dry_run=false
+# 毎日 JST 18:00 に実行し、「今夜20-22時」「翌朝7-8時」「翌昼12-13時」の3枠ぶんを予約する。
+# 画像が3枚/日に足りなくなったら、自動で「ある分だけ」投稿し、枚数不足をログに出す。
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # JST 18:00
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'true: Bufferへ送らず予約内容の確認だけ行う'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-life-post
+  cancel-in-progress: false
+
+jobs:
+  schedule-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: 投稿を予約
+        env:
+          BUFFER_API_KEY:    ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          IMAGE_BRANCH:      ${{ github.ref_name }}
+          POSTS_PER_RUN:     '3'
+          DRY_RUN:           ${{ github.event.inputs.dry_run || 'false' }}
+        run: python daily_life_poster.py
+      - name: ログをコミット
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f outputs/daily_life_log.json ] && git add outputs/daily_life_log.json
+          git diff --cached --quiet || (git commit -m "chore: 日常投稿ログ更新" && git push)
