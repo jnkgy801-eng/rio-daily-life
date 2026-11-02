@@ -70,5 +70,29 @@
     "theme": "a_me",
     "caption": "写真を撮るのがちょっと好き。気づいたらスマホの写真が増えてる",
     "due_at": "2026-11-03T11:01:35.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "a_question",
+    "caption": "最近ちょっと気になってること、ある？私は新しいカフェを探してる",
+    "due_at": "2026-11-03T22:16:16.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "a_sky",
+    "caption": "空を見る余裕がある日って、それだけで貴重かも",
+    "due_at": "2026-11-04T03:33:57.000Z"
+  },
+  {
+    "image": "02_balcony_night.jpg",
+    "has_image": true,
+    "slot": "night",
+    "theme": null,
+    "caption": "夜風が気持ちよかったから、少しだけ外に出てきた。みんなは夜、何してる？",
+    "due_at": "2026-11-04T11:50:34.000Z"
   }
 ]
