@@ -94,5 +94,29 @@
     "theme": null,
     "caption": "夜風が気持ちよかったから、少しだけ外に出てきた。みんなは夜、何してる？",
     "due_at": "2026-11-04T11:50:34.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_commute",
+    "caption": "朝のホームの空気、ひんやりして好き。ちょっとだけ背筋が伸びる",
+    "due_at": "2026-11-04T22:05:11.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_cafe",
+    "caption": "お昼のカフェで一息☕ 窓際の席が空いてるとうれしい",
+    "due_at": "2026-11-05T03:04:10.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "night",
+    "theme": "e_view",
+    "caption": "夜の静かな時間、ホットミルクを飲んで一息",
+    "due_at": "2026-11-05T12:17:13.000Z"
   }
 ]
