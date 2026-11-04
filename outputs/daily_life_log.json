@@ -118,5 +118,29 @@
     "theme": "e_view",
     "caption": "夜の静かな時間、ホットミルクを飲んで一息",
     "due_at": "2026-11-05T12:17:13.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_coffee",
+    "caption": "朝の1杯のコーヒーで、やっと頭が動き出す☕",
+    "due_at": "2026-11-05T22:45:33.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_busy",
+    "caption": "お昼休みになった瞬間の解放感、毎回うれしい",
+    "due_at": "2026-11-06T03:07:41.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "night",
+    "theme": "e_conv",
+    "caption": "つい余計なものまで買っちゃう夜。みんなはコンビニで何買う？",
+    "due_at": "2026-11-06T12:02:38.000Z"
   }
 ]
