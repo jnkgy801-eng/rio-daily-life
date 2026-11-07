@@ -190,5 +190,29 @@
     "theme": "e_praise",
     "caption": "うまくいかない日もあるけど、それでも一日終わったから十分だよね",
     "due_at": "2026-11-08T12:58:02.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_motivation",
+    "caption": "朝は苦手だけど、話しかけてくれる人がいると頑張れる",
+    "due_at": "2026-11-08T22:03:58.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_cafe",
+    "caption": "午前中がんばったから、ちょっとだけカフェで休憩",
+    "due_at": "2026-11-09T03:07:56.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "night",
+    "theme": "e_rain",
+    "caption": "雨の音を聞きながら本を読む夜。静かで落ち着く",
+    "due_at": "2026-11-09T12:36:15.000Z"
   }
 ]
