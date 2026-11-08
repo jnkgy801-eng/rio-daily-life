@@ -214,5 +214,29 @@
     "theme": "e_rain",
     "caption": "雨の音を聞きながら本を読む夜。静かで落ち着く",
     "due_at": "2026-11-09T12:36:15.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "a_sky",
+    "caption": "ふと空を見上げたら、雲がかわいかった☁️",
+    "due_at": "2026-11-09T22:58:02.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "a_thanks",
+    "caption": "見てくれてありがとう。みんなの反応が、毎日の励みになってます",
+    "due_at": "2026-11-10T03:47:36.000Z"
+  },
+  {
+    "image": "04_cooking_dinner.jpg",
+    "has_image": true,
+    "slot": "night",
+    "theme": null,
+    "caption": "今日の夜ごはんは自分で作りました。味見はばっちり！",
+    "due_at": "2026-11-10T11:51:13.000Z"
   }
 ]
