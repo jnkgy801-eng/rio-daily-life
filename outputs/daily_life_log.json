@@ -286,5 +286,29 @@
     "theme": "e_home",
     "caption": "帰り道の空がきれいだった。今日はこれで十分",
     "due_at": "2026-11-12T11:58:12.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_prep",
+    "caption": "今日の予定を頭の中で確認中。やることは多いけど、ゆっくりいこう",
+    "due_at": "2026-11-12T22:12:51.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_park",
+    "caption": "ベンチでアイスティーを飲んで、5分だけぼーっとした",
+    "due_at": "2026-11-13T03:23:29.000Z"
+  },
+  {
+    "image": "05_rainy_reading.jpg",
+    "has_image": true,
+    "slot": "night",
+    "theme": null,
+    "caption": "窓の外は雨。部屋の中は静かで、本の世界にゆっくり浸ってます",
+    "due_at": "2026-11-13T11:37:52.000Z"
   }
 ]
