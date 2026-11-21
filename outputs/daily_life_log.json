@@ -526,5 +526,29 @@
     "theme": null,
     "caption": "今朝のキッチンでの一枚。朝のコーヒーでやっと目が覚めた☕",
     "due_at": "2026-11-22T11:58:56.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_weather",
+    "caption": "天気予報を見て、傘を持つかどうか迷う朝。みんなは持っていく派？",
+    "due_at": "2026-11-22T22:53:52.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_book",
+    "caption": "短い時間でも、本の世界に入ると気持ちが休まる",
+    "due_at": "2026-11-23T03:51:19.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "night",
+    "theme": "e_cook",
+    "caption": "冷蔵庫にあるもので、なんとか1品。今日はそれで十分",
+    "due_at": "2026-11-23T12:06:53.000Z"
   }
 ]
