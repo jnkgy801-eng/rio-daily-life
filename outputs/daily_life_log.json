@@ -550,5 +550,29 @@
     "theme": "e_cook",
     "caption": "冷蔵庫にあるもので、なんとか1品。今日はそれで十分",
     "due_at": "2026-11-23T12:06:53.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "morning",
+    "theme": "m_breakfast",
+    "caption": "朝ごはんはトーストと目玉焼き。シンプルなのが一番落ち着く🍳",
+    "due_at": "2026-11-23T22:06:44.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "noon",
+    "theme": "n_sweet",
+    "caption": "午後のご褒美に、甘いものを買っちゃった🍮",
+    "due_at": "2026-11-24T03:13:52.000Z"
+  },
+  {
+    "image": null,
+    "has_image": false,
+    "slot": "night",
+    "theme": "e_view",
+    "caption": "ちょっとだけ外に出たら、空気が澄んでいて気持ちよかった",
+    "due_at": "2026-11-24T11:14:16.000Z"
   }
 ]
